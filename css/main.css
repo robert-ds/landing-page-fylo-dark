@@ -104,8 +104,9 @@ body {
 
 .hero__img {
   width: 100%;
-
   object-fit: cover;
+  margin: 0 auto;
+  max-width: 70rem;
 }
 
 .hero__title {
@@ -128,3 +129,66 @@ body {
   color: var(--white);
   font-weight: bold;
 }
+
+/* Section main about*/
+
+.about {
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.about__img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.about__title {
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: var(--heading-font);
+}
+
+
+/* Section productive */
+
+.productive {
+  color: var(--white);
+  display: grid;
+  gap: 3rem;
+}
+
+.productive__img {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 70rem;
+}
+
+.productive__title {
+  font-family: var(--heading-font);
+  margin-bottom: 1.4rem;
+}
+
+.productive__paragraph { 
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.productive__cta {
+  display: inline-block;
+  color: var(--cyan-gradient);
+  line-height: 2.5;
+  text-decoration: none;
+  border-bottom: .1rem solid var(--cyan-gradient);
+}
+
+.productive__arrow {
+  margin-left: .5rem;
+  vertical-align: middle;
+}
+
