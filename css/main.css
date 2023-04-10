@@ -29,8 +29,32 @@ body {
   background-color: var(--blue-main);
 }
 
+/* Header Section */
+
 .hero {
   background-color: var(--blue-intro);
+  position: relative;
+}
+
+.hero__wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background-color: var(--blue-main);
+}
+
+.hero__wave::before {
+  content: "";
+  position: absolute;
+  top: -100;
+  width: 100%;
+  height: 10rem;
+  background-image: url("../images/bg-curvy-mobile.svg");
+  background-position: center;
+  background-size: cover ;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -58,7 +82,7 @@ body {
 
 .nav__link {
   display: inline-block;
-  margin-left: .3rem;
+  margin-left: .4rem;
   color: var(--white);
   text-decoration: none;
   font-size: .6rem;
@@ -66,4 +90,41 @@ body {
 
 .nav__link:first-of-type {
   margin-left: auto;
+}
+
+/* Hero Main Section */
+
+.hero__main {
+  color: var(--white);
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero__img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.hero__title {
+  font-family: var(--heading-font);
+}
+
+.hero__paragraph {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.hero__cta {
+  width: 60%;
+  text-decoration: none;
+  background-image: var(--gradient);
+  place-self: center;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  font-family: var(--heading-font);
+  color: var(--white);
+  font-weight: bold;
 }
