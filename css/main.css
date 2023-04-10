@@ -32,3 +32,38 @@ body {
 .hero {
   background-color: var(--blue-intro);
 }
+
+.container {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 7rem;
+}
+
+.nav__img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.nav__link {
+  display: inline-block;
+  margin-left: .3rem;
+  color: var(--white);
+  text-decoration: none;
+  font-size: .6rem;
+}
+
+.nav__link:first-of-type {
+  margin-left: auto;
+}
