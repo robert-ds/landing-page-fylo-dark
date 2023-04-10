@@ -258,3 +258,49 @@ body {
   color: #aaa9a9;
 }
 
+/* Section join */
+
+.join {
+  background-image: linear-gradient(var(--blue-main) 50%, var(--blue-footer) 50%);
+  color: var(--white);
+  padding: 6rem 0;
+}
+
+.join__container {
+  background-color: var(--blue-testimonials);
+  border-radius: .8rem;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.join__title {
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.join__paragraph {
+  line-height: 1.5;
+  margin-bottom: 1.5rem
+}
+
+.join__form {
+  display: grid;
+  gap: 1rem;
+}
+
+.join__input{
+  padding: 1.2rem 1.8rem;
+  font: inherit;
+  border-radius: 2.2rem;  
+  outline: none;
+  border: none;
+}
+
+.join__input--submit {
+  background-image: var(--gradient);
+  color: var(--white);
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
