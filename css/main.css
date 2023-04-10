@@ -192,3 +192,69 @@ body {
   vertical-align: middle;
 }
 
+/* Section Card */
+
+.card {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.card__item {
+  background-color: var(--blue-testimonials);
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  border-radius: .4rem;
+  box-shadow: .1rem .1rem 1rem -.5em rgba(255,255,255, .5);
+}
+
+.card__item--first {
+  position: relative;
+}
+
+.card__item--first::before {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  left: 0;
+  background-image: url("../images/bg-quotes.png");
+  width: 2rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card__picture {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.card__img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card__info {
+  margin-left: 1rem;
+}
+
+.card__name {
+  font-size: .9rem;
+  font-family: var(--heading-font)
+}
+
+.card__job {
+  color: #aaa9a9;
+}
+
